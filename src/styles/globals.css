@@ -59,12 +59,9 @@ position: relative;
   position: absolute;
   left: 177px;
   top: 463.44px;
-  
-  
   background: conic-gradient(from 140.55deg at 50% 50%, #EBC645 0deg, #FA9E33 28.12deg, #FA9E33 65.73deg, #CD1876 103.13deg, #EBC645 136.88deg, #FA9E33 176.25deg, #FA9E33 208.13deg, #CD1876 241.88deg, #EBC645 275.62deg, #FA9E33 318.75deg, #EBC645 360deg);
   filter: blur(60px);
   border-radius: 2384.56px;
-
 }
 .slick-list{
   text-align-last: center;
@@ -72,6 +69,9 @@ position: relative;
 .card-section {
   position: relative;
   z-index: 1;
+}
+.text{
+  text-align-last: auto;
 }
 .card-section:before {
   content: "";
@@ -106,4 +106,6 @@ position: relative;
   background-size: auto;
   background-position:center;
 }
+
+
 

@@ -2,11 +2,11 @@ import React from "react";
 
 const Card = ({ text }: { text: string }) => {
   return (
-    <div className="p-[32px] bg-[#0F0518]  rounded-[12px] w-full max-w-[826px] mx-auto my-8  flex  justify-between items-center ">
+    <div className="p-[32px] bg-[#0F0518]  rounded-[12px] w-full max-w-[826px] mx-auto my-8  flex sm:flex-col    justify-between items-center ">
       <h3 className=" text-white text-[28px] sm:text-[24px] font-semibold  ">
         {text}
       </h3>
-      <div className="flex justify-end pr-5 ">
+      <div className="flex justify-end pr-5  sm:justify-end sm:w-full">
         <a
           href="#"
           className="inline-flex items-center justify-center  bg-white rounded-full shadow w-[45px] h-[45px]"

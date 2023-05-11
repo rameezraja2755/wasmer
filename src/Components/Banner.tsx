@@ -24,15 +24,15 @@ const Banner = () => {
           <h3 className="text-5xl font-semibold pt-6 pb-4 sm:text-[36px]">
             Run the world{" "}
           </h3>
-          <p className="text-[22px] opacity-50 text-center sm:text-xl ">
+          <p className="text-[22px] font-medium opacity-50 text-center sm:text-xl ">
             Using a binary for each platform and chip is the past. Rise above
             with lightweight containerized apps that simply run everywhere.
           </p>
         </div>
       </div>
-      <div className="banner">
+      <div className="banner sm:bg-auto">
         <div className=" w-full max-w-[826px] mx-auto sm:px-4  ">
-          <div className="flex items-center gap-[18px] justify-center pt-[64px]">
+          <div className="flex items-center flex-wrap gap-[18px] justify-center pt-[64px]">
             <Image src={DockerIcon} alt="" />
             <Image src={ReactIcon} alt="" />
             <Image src={JavascriptIcon} alt="" />

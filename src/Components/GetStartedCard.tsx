@@ -2,13 +2,13 @@ import React from "react";
 const GetStartedCard = () => {
   return (
     <section className="card-section flex justify-center pt-[70px]">
-      <div className="card pt-16  pl-20 pb-5 sm:pt-4 sm:pl-4  mt-10 mb-10 bg-gray-900 rounded-lg shadow  w-11/12 lg:w-11/12 xl:w-11/12 2xl:w-11/12">
+      <div className="card pt-16 text-4xl pl-20 pb-5 sm:py-6 sm:pl-4  mt-10 mb-10 bg-gray-900 rounded-lg shadow  w-11/12 lg:w-11/12 xl:w-11/12 2xl:w-11/12">
         <a href="#">
           <h2 className=" mb-4 text-white text-[48px] font-semibold ">
             Get Started
           </h2>
         </a>
-        <p className="mb-3 text-white text-[28px] font-semibold md:pr-2  pb-20 sm:pb-4 ">
+        <p className="mb-3 text-white text-[28px] opacity-70 font-semibold md:pr-2  sm:text-[20px] pb-20 sm:pb-4 ">
           Join the vibrant Wasmer community. Create your first package, run it
           from the shell and deploy it to the Edge
         </p>

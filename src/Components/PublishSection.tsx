@@ -32,8 +32,8 @@ const PublishSection = () => {
         },
       },
       {
-        breakpoint: 1054,
-        settings: { slidesToShow: 1 },
+        breakpoint: 1254,
+        settings: { slidesToShow: 2 },
       },
       {
         breakpoint: 1520,
@@ -96,7 +96,7 @@ const PublishSection = () => {
     },
   ];
   return (
-    <section className=" py-12  ">
+    <section className=" py-12 relative  ">
       <div className=" flex items-center justify-center flex-col md:px-4">
         <Image src={Diveder} alt="" />
         <CustomButton label={"Publish"} iconLeft={PublishIcon} />
@@ -127,7 +127,7 @@ const PublishSection = () => {
                       </span>
                     </div>
                   </div>
-                  <p className=" text-base text-last-start font-medium opacity-50 text-start ">
+                  <p className=" text-base  h-40px text font-medium opacity-50 text-start ">
                     {e.content}
                   </p>
                   <div className="flex gap-6 items-center  opacity-50 pt-6 absolute bottom-[25px] ">
@@ -154,7 +154,7 @@ const PublishSection = () => {
         </div>
         <div className=" flex flex-col opacity-50 py-8 gap-6 items-center justify-center md:px-4">
           <p className=" text-center text-[22px] font-medium max-w-[526px]  ">
-            "This programming tool makes it easier for apps to <br /> work
+            "This programming tool makes it easier for apps to work
             anywhere"
           </p>
           <Image src={VerceIcon} alt="" />

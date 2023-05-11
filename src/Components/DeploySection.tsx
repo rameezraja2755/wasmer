@@ -27,7 +27,7 @@ const Deploy = () => {
         </h2>
         <p className=" text-[22px] font-medium  leading-140 text-center opacity-50  pt-4 max-w-720">
           Get the scalability of serverless and the reusability of cloud. Deploy
-          to <br /> the edge, save your users time and yourself money.{" "}
+          to the edge, save your users time and yourself money.{" "}
         </p>
       </div>
       <div className=" hidden md:flex md:justify-end">

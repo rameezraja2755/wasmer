@@ -17,14 +17,14 @@ const Showcase = () => {
   return (
     <section className="py-[88px] sm:pb-[40px]">
       <div className=" flex justify-center ">
-        <h1 className="text-[52px] sm:text-[44px] font-glory font-semibold leading-[120%] md:px-4 ">
-          Run, Publish & Deploy <br /> any code - anywhere
+        <h1 className=" w-full max-w-[600px] text-[52px] sm:text-center sm:text-[44px] font-glory font-semibold leading-[120%] md:px-4 ">
+          Run, Publish & Deploy  any code - anywhere
         </h1>
       </div>
       <div className="showcase-background w-full h-[84vh] xl:h-[70vh] lg:h-[60vh] md:h-[50vh] sm:h-[43vh]"></div>
       <div className=" flex flex-col items-center mt-[-20px] md:px-4 ">
-        <p className="text-[22px] font-normal text-center text-[#0E061A] opacity-50  ">
-          Serve sandboxed WebAssembly apps anywhere through a single <br />{" "}
+        <p className="text-[22px] w-full max-w-[662px] text-center text-[#0E061A] opacity-50 font-medium  ">
+          Serve sandboxed WebAssembly apps anywhere through a single 
           runtime and do in days what others do in months.
         </p>
         <div className="my-2">
