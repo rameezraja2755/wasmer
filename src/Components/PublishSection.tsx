@@ -96,8 +96,10 @@ const PublishSection = () => {
     },
   ];
   return (
-    <section className=" py-12 relative  ">
-      <div className=" flex items-center justify-center flex-col md:px-4">
+    <section className=" py-12 relative   ">
+      <div className="public-section">
+
+      <div className=" flex items-center justify-center flex-col md:px-4 relative" >
         <Image src={Diveder} alt="" />
         <CustomButton label={"Publish"} iconLeft={PublishIcon} />
         <h2 className=" text-5xl font-semibold py-6 sm:text-[36px] ">
@@ -108,8 +110,7 @@ const PublishSection = () => {
           lightweight containerized apps that simply run everywhere.
         </p>
       </div>
-      <div className="public-section">
-        <div className=" pt-16 react-silk-bg w-full md:px-4  ">
+        <div className=" pt-16  md:px-4 relative  ">
           <Slider {...settings}>
             {data.map((e, index) => {
               return (

@@ -38,37 +38,36 @@ body {
     background-size: cover;
     background-position: center;
 }
-.banner{
-  background-image: url("../../public/images/bannerBackground.png");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 56% 16%;
-  background-size: 89%;
-  /* height: 50vh; */
+.banner {
+  /* Your existing styles for the .banner class */
+  position: relative;
+}
 
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 49%;
+  height: 59%;
+  left: 25%;
+  top: 22%;
+  background: linear-gradient(90deg, #EBC645 0%, #02C372 50%, #0B7046 100%);
+  filter: blur(75px);
+  border-radius: 2384.56px;
 }
 .silk{
   box-shadow: 0px 8.91428px 38.6286px rgba(35, 16, 68, 0.04), 0px 2.6874px 15.7931px rgba(35, 16, 68, 0.0226), 0px 1.11621px 10.0286px rgba(35, 16, 68, 0.015), 0px 0.40371px 7.42857px rgba(35, 16, 68, 0.001);
 border-radius: 12px;
 }
-.react-silk-bg{
-position: relative;
 
-}
-.react-silk-bg::before {
-  position: absolute;
-  left: 177px;
-  top: 463.44px;
-  background: conic-gradient(from 140.55deg at 50% 50%, #EBC645 0deg, #FA9E33 28.12deg, #FA9E33 65.73deg, #CD1876 103.13deg, #EBC645 136.88deg, #FA9E33 176.25deg, #FA9E33 208.13deg, #CD1876 241.88deg, #EBC645 275.62deg, #FA9E33 318.75deg, #EBC645 360deg);
-  filter: blur(60px);
-  border-radius: 2384.56px;
-}
 .slick-list{
   text-align-last: center;
 }
 .card-section {
   position: relative;
   z-index: 1;
+}
+.slick-next {
+  display: none !important;
 }
 .text{
   text-align-last: auto;
@@ -84,6 +83,7 @@ position: relative;
   filter: blur(71px);
   z-index: -1;
   bottom: -1%;
+  /* border-radius: 40px; */
 }
 .deploy-section{
   background-image: url('../../public/images/bg-img.png');
@@ -100,11 +100,46 @@ position: relative;
 
 }
 .public-section {
-  background-image: url("../../public/images/HomepageBg.png");
-  background-repeat: no-repeat;
-  z-index: -1 !important;
-  background-size: auto;
-  background-position:center;
+  position: relative;
+}
+
+.public-section::before {
+  content: "";
+  position: absolute;
+  width: 48%;
+  height: 18%;
+  left: 25%;
+  top: 53%;
+  background: conic-gradient(
+    from 140.55deg at 50% 50%,
+    #EBC645 0deg,
+    #FA9E33 28.12deg,
+    #FA9E33 65.73deg,
+    #CD1876 103.13deg,
+    #EBC645 136.88deg,
+    #FA9E33 176.25deg,
+    #FA9E33 208.13deg,
+    #CD1876 241.88deg,
+    #EBC645 275.62deg,
+    #FA9E33 318.75deg,
+    #EBC645 360deg
+  );
+  filter: blur(75px);
+  border-radius: 2384.56px;
+}
+@media only screen and (max-width: 600px) {
+  .public-section::before {
+    width: 76%;
+    height: 32%;
+    left: 14%;
+    top: 46%;
+  }
+  .banner::before{
+    height: 66%;
+    left: 12%;
+    top: 29%;
+    width: 75%;
+  }
 }
 
 

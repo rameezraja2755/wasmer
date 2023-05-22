@@ -31,7 +31,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="banner sm:bg-auto">
-        <div className=" w-full max-w-[826px] mx-auto sm:px-4  ">
+        <div className=" w-full max-w-[826px] relative mx-auto sm:px-4  ">
           <div className="flex items-center flex-wrap gap-[18px] justify-center pt-[64px]">
             <Image src={DockerIcon} alt="" />
             <Image src={ReactIcon} alt="" />
@@ -40,10 +40,12 @@ const Banner = () => {
             <Image src={PythonIcon} alt="" />
             <Image src={GoLogoIcon} alt="" />
           </div>
-          <p className="text-[22px] font-medium text-[#FAFBFD] py-4 text-center">
+          <p className="text-[22px] font-medium text-[#FAFBFD] pt-4 text-center">
             Supports almost every programming language
           </p>
-          <Card text={"Truly universal, runs everywhere & fast as native"} />
+          <Card
+           text={"Truly universal, runs everywhere & fast as native"}
+           className="mt-1" />
         </div>
       </div>
       <div className=" flex flex-col opacity-50 pt-[61px] gap-6 items-center  justify-center sm:px-4">
